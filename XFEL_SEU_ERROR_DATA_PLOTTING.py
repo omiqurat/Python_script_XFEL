@@ -111,8 +111,6 @@ def DOSE_csv_Read_file (file_name):
         print ("you don't")
     with open(file_name,mode='r') as csv_file :
         csv_reader= csv.DictReader(x.replace('\0', '') for x in csv_file)
-
-
         line_count = 0
         for row in csv_reader:
             if line_count == 0:
@@ -173,8 +171,6 @@ def DOSE_csv_Read_file (file_name):
             xfelcpulla25s.append(float(row["xfelcpulla25s"]))
             xfelcpulla26s.append(float(row["xfelcpulla26s"]))
             Date.append(row["Date"])
-
-
             #print(row["hostname"])
         print(f'Processed {line_count} lines.')
 host_name=["xfelcpullah1i1","xfelcpulla2m" ,"xfelcpulla3m","xfelcpulla4m","xfelcpulla5m","xfelcpulla6m","xfelcpulla7m","xfelcpulla8m","xfelcpulla9m","xfelcpulla10m","xfelcpulla11m","xfelcpulla12m","xfelcpulla13m","xfelcpulla14m","xfelcpulla15m","xfelcpulla16m","xfelcpulla17m","xfelcpulla18m","xfelcpulla19m","xfelcpulla20m","xfelcpulla21m","xfelcpulla22m","xfelcpulla23m","xfelcpulla24m","xfelcpulla25m","xfelcpulla26m","xfelcpulla2s","xfelcpulla3s","xfelcpulla4s","xfelcpulla5s","xfelcpulla6s","xfelcpulla7s","xfelcpulla8s","xfelcpulla9s","xfelcpulla10s","xfelcpulla11s","xfelcpulla12s","xfelcpulla13s","xfelcpulla14s","xfelcpulla15s","xfelcpulla16s","xfelcpulla17s","xfelcpulla18s","xfelcpulla19s","xfelcpulla20s","xfelcpulla21s","xfelcpulla22s","xfelcpulla23s","xfelcpulla24s","xfelcpulla25s","xfelcpulla26s"]
