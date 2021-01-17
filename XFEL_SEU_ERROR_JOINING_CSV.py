@@ -105,7 +105,7 @@ file_name=['2019-07-09_ecc.csv',
            '2019-10-10_ecc.csv']
 
 ### making new csv file and writting all data from each csv sequentially..
-
+###
 with open('ecc_2019-07-09_to_2019-10-10.csv', 'w',newline="") as csvfile:    ## Name of new csv file (Master CSV) which is created
 
     fieldnames = ['hostname', 'timestamp', 'board', 'CRC', 'CrcCnt','EccCnt,ECC', 'EccSingleCnt', 'FAR', 'SynBit', 'SynDrome', 'SynWord']   ## Name of Row
